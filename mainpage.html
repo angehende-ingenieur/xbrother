@@ -5,6 +5,7 @@
   <title>엑스형</title>
    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <style>
 
   @font-face {
@@ -35,28 +36,59 @@
   }
 
   </style>
+  <script>
+  function setColor(color){
+    // var alist = document.querySelectorAll('a');
+    // var i = 0;
+    // while(i < alist.length){
+    //   alist[i].style.color = color;
+    //   i = i + 1;
+    // }
+    $('a').css('color', color);
+  }
+  var Body = {
+    setColor: function (color){
+      $('body').css('color', color);
+    },
+    setBackgroundColor: function (color){
+      $('body').css('backgroundColor', color);
+    }
+  }
+
+
+  function nightDayHandler(self){
+
+    var target =   document.querySelector('body');
+    if(self.value === 'night'){
+      Body.setBackgroundColor = 'black';
+      Body.setColor = 'white';
+      self.value = 'day';
+
+      setColor('powderblue');
+    } else {
+      Body.setBackgroundColor = '#a9a9a9';
+      Body.setColor = 'black';
+      self.value = 'night';
+
+      setColor('black');
+  }
+
+  }
+  </script>
 </head>
 
 <body style="background-color: #a9a9a9;">
-
+<!-- style="background-color: #a9a9a9;"
+-->
 
 
 
     <h3><a href="mainpage.html">엑스형</a></h3>
-
-    <!--
-    <input type="button" value="Go back to 2005?" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    ">
+  <!-- <input type="button" value="night" onclick="
+      nightDayHandler(this);
+        "> -->
 
 
-
-    <input type="button" value="Go back again?" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    ">
-  -->
 
     <p style="margin-top:10px;"><ul class="tree-view" style="width: 200px;" id="listbox">
 
@@ -109,7 +141,7 @@
           </li>
           <li>
             <details>
-              <summary>엑스형 명대사 보러가기</summary>
+              <summary><a href="line.html">엑스형 명대사 보러가기</a></summary>
                 </details>
         </li>
         <li>
@@ -129,6 +161,9 @@
 
   <p style="margin-top:10px;">중국에는 인터넷 소설이 없었다. 있기야 했다. 하지만 이곳과는 격이 달랐다.
   <br><a href="https://8299111.postype.com/post/3541939" style="text-decoration:underline">인터넷 소설</a>은 나에게 사랑을 알려줬다. 개병신 사랑. 개똘추 사랑. </p>
+
+
+
 
   <img src="mainpage1.gif" width=50%>
 
