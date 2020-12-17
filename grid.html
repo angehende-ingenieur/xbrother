@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>grid</title>
+
+    <style>
+
+
+.container {
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(6, 8vw);
+
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+}
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.gallery__item--4 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.gallery__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.gallery__item--7 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.gallery__item--9 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.gallery__item--10 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.gallery__item--11 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+.gallery__item--12 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.gallery__item--13 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 7;
+}
+.gallery__item--14{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.gallery__item--15{
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.gallery__item--16{
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.gallery__item--17{
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+figure{
+  margin: 5px;
+}
+      </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+    <div class="gallery">
+  <figure class="gallery__item gallery__item--1">
+    <img src="버디버디.jpg" class="gallery__img" alt="Image 1">
+  </figure>
+  <figure class="gallery__item gallery__item--2">
+    <img src="공공즈.jpg" class="gallery__img" alt="Image 2">
+  </figure>
+  <figure class="gallery__item gallery__item--3">
+    <img src="마이크.jpg" class="gallery__img" alt="Image 3">
+  </figure>
+  <figure class="gallery__item gallery__item--4">
+    <img src="인형동맠.jpg" class="gallery__img" alt="Image 4">
+  </figure>
+  <figure class="gallery__item gallery__item--5">
+    <img src="제노해찬.jpg" class="gallery__img" alt="Image 5">
+  </figure>
+  <figure class="gallery__item gallery__item--6">
+    <img src="우유빙수.png" class="gallery__img" alt="Image 6">
+  </figure>
+  <figure class="gallery__item gallery__item--7">
+    <img src="인순이형.jpg" class="gallery__img" alt="Image 7">
+  </figure>
+  <figure class="gallery__item gallery__item--8">
+    <img src="914.jpg" class="gallery__img" alt="Image 8">
+  </figure>
+  <figure class="gallery__item gallery__item--9">
+    <img src="용기.jpg" class="gallery__img" alt="Image 9">
+  </figure>
+  <figure class="gallery__item gallery__item--10">
+    <img src="기대.jpg" class="gallery__img" alt="Image 10">
+  </figure>
+  <figure class="gallery__item gallery__item--11">
+    <img src="공고.jpg" class="gallery__img" alt="Image 11">
+  </figure>
+  <figure class="gallery__item gallery__item--12">
+    <img src="인생네컷.jpg" class="gallery__img" alt="Image 11">
+  </figure>
+  <figure class="gallery__item gallery__item--13">
+    <img src="폴라로이드.jpg" class="gallery__img" alt="Image 11">
+  </figure>
+  <figure class="gallery__item gallery__item--14">
+    <img src="시궁창.jpg" class="gallery__img" alt="Image 14">
+  </figure>
+  <figure class="gallery__item gallery__item--15">
+    <img src="교복동맠.jpg" class="gallery__img" alt="Image 15">
+  </figure>
+  <figure class="gallery__item gallery__item--16">
+    <img src="공공.gif" class="gallery__img" alt="Image 16">
+  </figure>
+  <figure class="gallery__item gallery__item--17">
+    <img src="바늘.jpg" class="gallery__img" alt="Image 17">
+  </figure>
+</div>
+</div>
+
+  </body>
+</html>
