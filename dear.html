@@ -1,0 +1,223 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>엑스형</title>
+   <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+
+  @font-face {
+       font-family: 'DungGeunMo';
+       src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+       font-weight: normal;
+       font-style: normal;
+  }
+  body {
+    text-align: center;
+    font-family: 'DungGeunMo';
+
+  }
+
+    a {
+      color:black;
+      text-decoration: none;
+    }
+
+    ul {
+  margin: auto;
+  font-family: "DungGeunMo";
+}
+  #listbox{
+    margin: auto;
+    text-align: left;
+
+  }
+  .div {
+    display:table; width:600px; height:500px;
+    margin: auto;
+  }
+   .p {
+     display:table-cell;
+     text-align:center;
+     vertical-align:middle;
+   }
+  </style>
+  <script>
+  function setColor(color){
+    // var alist = document.querySelectorAll('a');
+    // var i = 0;
+    // while(i < alist.length){
+    //   alist[i].style.color = color;
+    //   i = i + 1;
+    // }
+    $('a').css('color', color);
+  }
+  var Body = {
+    setColor: function (color){
+      $('body').css('color', color);
+    },
+    setBackgroundColor: function (color){
+      $('body').css('backgroundColor', color);
+    }
+  }
+
+
+  function nightDayHandler(self){
+
+    var target =   document.querySelector('body');
+    if(self.value === 'night'){
+      Body.setBackgroundColor = 'black';
+      Body.setColor = 'white';
+      self.value = 'day';
+
+      setColor('powderblue');
+    } else {
+      Body.setBackgroundColor = '#a9a9a9';
+      Body.setColor = 'black';
+      self.value = 'night';
+
+      setColor('black');
+  }
+
+  }
+  </script>
+</head>
+
+<body style="background-color: #a9a9a9;">
+<!-- style="background-color: #a9a9a9;"
+-->
+
+
+
+    <h3><a href="mainpage.html">엑스형</a></h3>
+  <!-- <input type="button" value="night" onclick="
+      nightDayHandler(this);
+        "> -->
+
+
+
+    <p style="margin-top:10px;"><ul class="tree-view" style="width: 200px;" id="listbox">
+
+    <li>
+      <details open>
+        <summary>All about 엑스형</summary>
+        <ul>
+          <li>
+            <details>
+              <summary>Who's in 엑스형? </summary>
+          <li><a href="marklee.html">Mark Lee</a></li>
+          <li><a href="fullsun.html">이동혁</a></li>
+          <li><a href="renjun.html">황인준</a></li>
+          <li><a href="jeno.html">이제노</a></li>
+          <li><a href="nana.html">나은혈</a></li>
+        </details>
+        </li>
+          <li>
+            <details>
+              <summary>특별정보</summary>
+              <ul>
+                <li><strong style="color: blue">✨ 이동혁이마크 ✨</strong></li>
+                <li>
+                  <details>
+                    <summary>이쀼리팸</summary>
+                    <ul>
+                      <li>이동혁이제노</li>
+                      <li>나은혈이제노</li>
+                      <li>이동혁황인준</li>
+                      <li>이동혁나은혈</li>
+                      <li>이제노황인준</li>
+                      <li>나은혈황인준</li>
+                    </ul>
+                  </details>
+                </li>
+                <li>
+                  <details>
+                    <summary>etc.</summary>
+                    <ul>
+                      <li>공고</li>
+                      <li>철수</li>
+                      <li>쌈마</li>
+                      <li>석정</li>
+                      <li>동글이</li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary><a href="line.html">엑스형 명대사 보러가기</a></summary>
+                </details>
+        </li>
+        <li>
+          <details>
+            <summary><a href="cp.html">내 맘의 CP를 찾아서</a></summary>
+              </details>
+      </li>
+      <li>
+        <details>
+          <summary>Dear. Hwang</summary>
+            </details>
+    </li>
+        <li>
+          <details>
+            <summary>방명록</summary>
+              </details>
+      </li>
+        </ul>
+      </details>
+    </li>
+
+    <p><li>Special Thanks</li>
+    <li>hubukee</li></p>
+  </ul>
+</p>
+
+
+
+  <div class="div">
+   <p class="p" style="margin-top:20px;">아까 카톡으로 이미 다 말하긴 했지만
+ 내가 수업 중간중간에 카톡쓰고 확인하느라 정신이 없어가지구<br> 해야했을말을 다 못한거 같기도하구 해서여...
+ 언니가 두번째로 보낸 카톡 못 읽고 답장쓴거라서<br> 언니가 봤을때 존나 어이없었을거 같아.. 아까도 말했지만
+ <br><br>사실 그 다음에 답장 온거보고 엄청 놀랐거든 언니가 왜 이렇게 보냈지? 해서<br>
+ 아 내가 t라서 있는 팩트만 정확히 알려줘야 말을 알아 먹을 것 같아서 이렇게 보낸건가? 까지 생각해보고 그 다음에 답장을 한거였오..<br><br>
+ 그 느금 얘기만 하게 된다는거 사실 나도 누군가에게 똑같이 했더라구..<br> 블로그를 쓰는데 수정언니가 일상 블로그 써달라고 댓글에 쓴적이 있었는데 <br>나한테 일상은 느금 뿐이었거든<br><br>
+ 왜 그때 나를 손절 했다던 그 친구랑도 서로 상황이 안좋아서 그랬었던거지 <br>서로 좋을때 보면 안 그랬을수도 있었을거라고 언니들이 알려줬잖아
+ 오늘 그 말이 다시 생각나더라구.. <br>그냥 쭉 올해를 돌이켜봤는데 (아 이제 작년이네 소름..)<br> 둘 다에게 유난히 힘들었던 한 해 였던거 같은데 초반까지는 아니였다가 <br>후반으로 갈 수록 더 안좋아져서 조금더 맘이 상하면 더 상하지 않았을까? 하는 생각을 했었어<br><br>
+ 이제는 나도 다 이해하고 그럴 수 밖에 없었던거 알지만 그냥 한 번 더 정리해서 얘기를 하면<br>
+ 어느 순간부터 나는 언니한테 힘든거 계속 투정부리기만하고, <br>그러다 보니까 나는 내가 또 자격지심 같은게 생겼나봐
+ 나만 징징거리는 사람이 되기 싫었던걸 수도 있고<br> 아니 일단 무엇보다도 언니한테 일어나는 일들 나도 알고 싶은데 잘 모르니까 답답하기도 했고<br><br>
+ 근데 내 입장에서는 언니가 나를 찾을때가 느금 얘기 할때뿐인것 같다는 <br>어리고 어린.. 생각을 하고 있었나봐. <br>언니한테는 정말 일상이 그것 아니면 힘들어서 꺼내지 못할 상황들이었던거 였는데. <br>여튼 이제는 다 알게됐으니까.
+ 말하기 정말 힘들었을텐데 나한테 말해줘서 고마워. <br>그리고 앞으로 말해달라고 안할게 진짜. 그냥 그게 서로 다른 방식이니까.. <br><br>그리고 나같아도 너무 힘들면 굳이 누구 찾아가서 애기 꺼내고 그렇진 않거든<br>
+ 보통은 그냥 계속 연락하는 친구들한테 더 많이 얘기하고 의지했었지. <br>그게 언니였고.<br><br>
+ 그래서 나도 언니한테 똑같은 존재같은게 되고 싶었던거 같은데... <br>그래주지 못한거 같아서 미안해<br><br>
+ 그리고 약속에 대해서 말한 부분은 나도 조금 서운했나봐. <br>다 투정이고 심통부린거라 진짜 미안하고 할 말 없긴 하지만..<br> 그니까 엑스형투어 못가도 상관없고 괜찮은데 나는 언니가 어떤 상황인지 잘 모르니까 알려주면<br> 아 그렇구나 그러면 다음에 가야지 이렇게 했을텐데<br><br>
+
+ 이유를 모르니까 더 답답해서 그랬나봐 말은 안하고 있었지만 속으로 그렇게 생각하고 있었어.. <br>속으로 담아두지 않는 편이라고 생각했는데 담고 있었나봐 <br>그리고 조금 지속되서 어제처럼 말이 막 나가버렸고<br><br>
+ 똥맠온 같이 가자는 약속도 잊고 있었어서 미안해... <br>언니한테는 되게 큰 이벤트고 일년을 기다리고 있었을 날 이었을텐데 <br>내가 그딴 말이나 했으니 당연히 빡칠것같아<br><br>
+ "니가원하고 안 원하고에 따라서 내가 기다리고잇다가 아 가고싶어졌어? 그럼 가자 <br>아지금은 또 싫어? 그럼 혼자갈게 이렇게 해야되는게 존나 웃겨 스스로가" <br>라고 언니가 말했었는데 나는 엑스형 투어 가는거를 이렇게 비슷하게 생각했었어<br><br>
+ 그러니까 이제 언니가 똥맠온 같이 가자고 하니까 아니 그 전에 엑스형투어는? <br>그거는 그럼 그냥 이대로 건너 뛰는건가? 라고 생각이 된거지.. <br>그래서 그렇게 심통부렸던거야.. 미안해.. ㅠㅠ <br><br>언니도 당연히 가고 싶었을텐데 또 나만 생각해서 <br>[나는 너무 가고싶은데 왜 못가 왜 안가 왜 안알려줘 ㅠ]이렇게 됐었음.. <br>쓰고보니 더 병신같애 이런 날 용서해줘...<br><br>
+ 그리고 내가 진짜 헷갈릴때가 많은데 <br>아무래도 우리가 처음 알게된 공간이 남x갤 이니까... ㅋㅋ ㅠㅠ<br>그냥 나는 별 생각 없이 쓰는 단어들이 격한데 이미 친구가 된 사이에서는 쓰면 안되는건가? <br>갑자기 이제서야 그런 생각을 했거든<br><br>
+ 똥맠 역하다는 단어 자체가 언니한테 충격이었던거 같아보여서.. 아닐수도 있지만요.. <br>만약에 저런 단어들 싫으면 자제할게 내가 여마크한테 저런 단어들은 안쓰고 말하니까<br><br>
+ 솔직히 느꿈이 너무 빨기 힘들고 정병쳐먹는 그룹이긴해.. <br>그리고 은근슬쩍 언니는 어차피 똥찬이 빨잖아 라는 식으로 말했었던것도 미안해 못되게 말해서.. <br>일부러 그렇게 말했었던 진짜 아니었는데 흥분해서 이미 뱉고 보면 그런 뉘앙스더라고..  <br>언니도 다같은 느꿈창인데 난 왜 이렇게 못났을까..? ㅠ....<br><br>
+ 아까도 위에도 지금도 말하지만 언니가 힘든일이 있고, <br>그걸 조금이라도 내가 도와줄 수 있는 부분이 <br>느금 얘기 들어주고 같이 하는거라면 얼마든지 할 수 있으니까.. <br>나한테 꼭 해주고..<br><br>
+ 사랑해 그리고 미안해...<br><br>
+ My baby love you so much forever U & I<br>
+ I love you oh I love you so much forever U & I...★✨<br><br></p>
+</div>
+
+
+
+
+
+  <img src="sarang.jpg" width=50%>
+
+
+
+<p>Copyrightⓒ 2005 XBrother Co., Ltd. All rights reserved.</p>
+
+
+</body>

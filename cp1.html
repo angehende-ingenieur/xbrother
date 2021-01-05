@@ -6,6 +6,26 @@
    <link rel="stylesheet" href="https://unpkg.com/98.css@0.1.4/build/98.css" />
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  function myCP () {
+      var selectedLeft = prompt("왼은 누구?", "");
+      var selectedRight = prompt("른은 누구?", "");
+}
+
+
+  function myLeft() {
+    return selectedLeft;
+  }
+  function myRight() {
+    return selectedRight;
+  }
+
+
+
+
+var left = myLeft();
+var right = myRight();
+    </script>
   <style>
 
   @font-face {
@@ -34,6 +54,7 @@
     text-align: left;
 
   }
+
 
   </style>
   <script>
@@ -149,11 +170,6 @@
             <summary><a href="cp.html">내 맘의 CP를 찾아서</a></summary>
               </details>
       </li>
-      <li>
-        <details>
-          <summary><a href="dear.html">Dear. Hwang</a></summary>
-            </details>
-    </li>
         <li>
           <details>
             <summary>방명록</summary>
@@ -168,14 +184,127 @@
   </ul>
 </p>
 
-
-  <p style="margin-top:10px;">중국에는 인터넷 소설이 없었다. 있기야 했다. 하지만 이곳과는 격이 달랐다.
-  <br><a href="https://8299111.postype.com/post/3541939" style="text-decoration:underline">인터넷 소설</a>은 나에게 사랑을 알려줬다. 개병신 사랑. 개똘추 사랑. </p>
+<div> 등장인물 </div>
 
 
 
+<script>
+let names = {
+"1":"제노",
+"2":"동혁",
+"3":"공고",
+"4":"재민",
+"5":"마크",
+"6":"런쥔",
+"7":"쌈마",
+"8":"철수"
+};
 
-  <img src="mainpage1.gif" width=50%>
+
+
+
+// 이름 한 번 씩 호출
+// 단 6:"런쥔" 까지만 가져오기
+
+for (var i = 1; i <7; i++){
+  document.write(names[i]+"  ");
+};
+
+</script>
+
+<!-- 사용자가 left와 right 값에 이름 각각 입력하게 만들기 -->
+
+
+<button onclick="myCP()">Try it</button>
+
+
+
+
+<!--
+// 일단 사용자가 입력한 값이 names 객체의 value값에 있는지 확인,
+// value값과 일치하는게 있으면, 그 value의 key값을 가져오기
+// 각각 가져온 왼 key값, 른 key값을 서로 빼준 값을 result에 담기
+// 그러고 나서 이미 실행한 if문 실행하기
+ -->
+
+ <!-- <script>
+         function getKeyByValue(object, value) {
+             for (var prop in object) {
+                 if (object.hasOwnProperty(prop)) {
+                     if (object[prop] === value)
+                     return prop;
+                 }
+             }
+         }
+
+     </script> -->
+
+<!-- <script>
+
+
+
+//   function leftCheck () {
+//     for(i=1, i<=7; i++){
+//       if(selectedLeft === names[i]){
+//         var left = getKeyByValue(names, names[i]);
+//         // left = getKeyByValue(names, names[i]);
+//       }
+//     }
+//   }
+//   // function rightCheck (){
+//   //   for(i=0, i<names.length; i++){
+//   //     if(selectedRight === names[i]){
+//   //       right = getKeyByValue(names, names[i]);
+//   //     }
+//   //   }
+//   // }
+//   document.write(left);
+// </script>
+// <!-- <div> 왼을 입력하세요 :</div><br>
+// <div> 른을 입력하세요 :</div><br> -->
+
+
+<!--조건문써서 각각 cp에 해당하는 실행문 만들어주기 -->
+<script>
+
+
+
+	document.write('<br>'+'<br>'+'<br>'+"당신이 선택한 왼/른은..."+'<br>'+'<br>');
+		document.write("왼:"+left+'<br>');
+		document.write(" 른:"+right+'<br>'+'<br>');
+
+		if(left==="동혁" && right==="마크") {
+			document.write("클래식입니다");
+		} else if(left==="제노" && right==="런쥔") {
+			document.write("존맛입니다");
+    }
+      else if(left==="재민" && right==="동혁") {
+  			document.write("우유빙수는 최대한 멀리하시길..");
+		} else if(left==="공고" && right==="마크") {
+			document.write("마크가 불쌍하지도 않으세요?");
+		} else if((left==="재민" && right==="제노") || (left==="제노" && right==="재민")) {
+			document.write("우정임");
+		} else if (left==="공고" || right==="공고"){
+			document.write("님 공고앰?");
+		} else if(left === right) {
+			document.write("자공자수 좋아하시는구나..");
+		} else if((left === "마크" && right ==="런쥔") || left === "제노" && right ==="동혁"){
+      document.write("형제 가지고 이러는거 아니다");
+    }
+    else if((left === "마크" || left === "런쥔")||(right === "제노" || right ==="동혁")) {
+			document.write("좌우반전 해야할듯요..");
+		} else {
+			document.write("잘알입니다.");
+		}
+
+
+</script>
+
+
+<!--당신의 cp는 출력 -->
+
+
+
 
 
 
