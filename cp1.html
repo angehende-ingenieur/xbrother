@@ -8,16 +8,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
   function myCP () {
-      var selectedLeft = prompt("왼은 누구?", "");
-      var selectedRight = prompt("른은 누구?", "");
+      return selectedLeft= myLeft();
+      return selectedRight= myRight();
+
 }
 
 
   function myLeft() {
-    return selectedLeft;
+    var selectedLeft = prompt("왼은 누구?", "");
+
   }
   function myRight() {
-    return selectedRight;
+    var selectedRight = prompt("른은 누구?", "");
+
   }
 
 
