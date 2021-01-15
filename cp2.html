@@ -283,8 +283,11 @@ for (var i = 1; i <7; i++){
 	document.write('<br>'+'<br>'+'<br>'+"당신이 선택한 왼/른은..."+'<br>'+'<br>');
 		document.write("왼:"+left+'<br>');
 		document.write(" 른:"+right+'<br>'+'<br>');
-
-		if(left==="동혁" && right==="마크") {
+  
+    if(left==="" || right===""){
+      document.write("입력은 하셔야죵...");
+    }
+    else if(left==="동혁" && right==="마크") {
 			document.write("클래식입니다");
 		} else if(left==="제노" && right==="런쥔") {
 			document.write("존맛입니다");
