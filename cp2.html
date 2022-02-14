@@ -177,7 +177,7 @@
       </li>
         <li>
           <details>
-            <summary>방명록</summary>
+              <summary><a href="comment.html">방명록</a></summary>
               </details>
       </li>
         </ul>
@@ -283,16 +283,21 @@ for (var i = 1; i <7; i++){
 	document.write('<br>'+'<br>'+'<br>'+"당신이 선택한 왼/른은..."+'<br>'+'<br>');
 		document.write("왼:"+left+'<br>');
 		document.write(" 른:"+right+'<br>'+'<br>');
-  
+
+
     if(left==="" || right===""){
       document.write("입력은 하셔야죵...");
-    }
-    else if(left==="동혁" && right==="마크") {
+    } else if(left === right) {
+			document.write("자공자수 좋아하시는구나..");
+		}  else if (left === "민형"  || right === "민형") {
+      document.write("민형이 말고 마크로 써주세용")
+    } else if (left === "인준" || right === "인준" ) {
+      document.write("인준 말고 런쥔으로 써주세용")
+    } else if(left==="동혁" && right==="마크") {
 			document.write("클래식입니다");
 		} else if(left==="제노" && right==="런쥔") {
 			document.write("존맛입니다");
-    }
-      else if(left==="재민" && right==="동혁") {
+    } else if(left==="재민" && right==="동혁") {
   			document.write("우유빙수는 최대한 멀리하시길..");
 		} else if(left==="공고" && right==="마크") {
 			document.write("마크가 불쌍하지도 않으세요?");
@@ -300,17 +305,13 @@ for (var i = 1; i <7; i++){
 			document.write("우정임");
 		} else if (left==="공고" || right==="공고"){
 			document.write("님 공고앰?");
-		} else if(left === right) {
-			document.write("자공자수 좋아하시는구나..");
 		} else if((left === "마크" && right ==="런쥔") || (left === "제노" && right ==="동혁")){
       document.write("형제 가지고 이러는거 아니다");
-    }
-    else if((left === "마크" || left === "런쥔")||(right === "제노" || right ==="동혁")) {
+    } else if((left === "마크" || left === "런쥔")||(right === "제노" || right ==="동혁")) {
 			document.write("좌우반전 해야할듯요..");
 		} else {
-			document.write("잘알입니다.");
+			document.write("취급안합니다.. (혹은 로직 오류)");
 		}
-
 
 </script>
 
